@@ -11,12 +11,12 @@ package transporte;
 public class Endereco {
     private String rua;
     private String cidade;
-    private String estado;
+    private String Provincia;
 
-    public Endereco(String rua, String cidade, String estado) {
+    public Endereco(String rua, String cidade, String Provincia) {
         this.rua = rua;
         this.cidade = cidade;
-        this.estado = estado;
+        this.Provincia = Provincia;
         
     }
 
@@ -36,12 +36,12 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getProvincia() {
+        return Provincia;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstado(String Provincia) {
+        this.Provincia = Provincia;
     }
 
  

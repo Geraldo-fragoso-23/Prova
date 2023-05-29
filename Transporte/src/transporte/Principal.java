@@ -15,6 +15,26 @@ public class Principal {
     
       public static void main(String[] args) {
           Scanner input= new Scanner(System.in);
+          System.out.println("Nome do cliente");
+          String Nome=input.next();
+          System.out.println("Idade do cliente");
+          int idade=input.nextInt();
+          System.out.println("Rua do cliente");
+          String rua=input.next();
+          System.out.println("Cidade do cliente");
+          String cidade=input.next();
+          System.out.println("Provincia do cliente");
+          String provincia=input.next();
+          System.out.println("Telefone do cliente");
+          String telefone=input.next();
+          System.out.println("Email do cliente");
+          String email=input.next();
+          Endereco endereco = new Endereco(rua,cidade,provincia);
+          Contacto contacto = new Contacto(telefone,email);
+          Cliente cliente= new Cliente(Nome,idade,endereco,contacto);
+          
+          System.out.println("");
+          
             System.out.println("Digite a oriegem:");
                          String origem;
                          String destino;
